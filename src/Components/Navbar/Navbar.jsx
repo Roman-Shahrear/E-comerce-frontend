@@ -19,21 +19,21 @@ const Navbar = () => {
       </div>
       <ul className="nav-menu">
         <li onClick={() => handleMenuClick('shop')}>
-          <Link to="/">Shop</Link>{menu === 'shop' ? <hr /> : <></>}
+          <Link style={{textDecoration: "none"}} to="/">Shop</Link>{menu === 'shop' ? <hr /> : <></>}
         </li>
         <li onClick={() => handleMenuClick('mens')}>
-          <Link to="/mens">Men</Link>{menu === 'mens' ? <hr /> : <></>}
+          <Link style={{textDecoration: "none"}} to="/mens">Men</Link>{menu === 'mens' ? <hr /> : <></>}
         </li>
         <li onClick={() => handleMenuClick('womens')}>
-          <Link to="/womens">Women</Link>{menu === 'womens' ? <hr /> : <></>}
+          <Link style={{textDecoration: "none"}} to="/womens">Women</Link>{menu === 'womens' ? <hr /> : <></>}
         </li>
         <li onClick={() => handleMenuClick('kids')}>
-          <Link to="/kids">Kids</Link>{menu === 'kids' ? <hr /> : <></>}
+          <Link style={{textDecoration: "none"}} to="/kids">Kids</Link>{menu === 'kids' ? <hr /> : <></>}
         </li>
       </ul>
       <div className="nav-login-cart">
-        <Link to="/login"><button>Login</button></Link>
-        <Link to="/cart"><img src={cart_icon} alt="cart_icon" /></Link>
+        <Link style={{textDecoration: "none"}} to="/login"><button>Login</button></Link>
+        <Link style={{textDecoration: "none"}} to="/cart"><img src={cart_icon} alt="cart_icon" /></Link>
         <div className="nav-cart-count">0</div>
       </div>
     </div>

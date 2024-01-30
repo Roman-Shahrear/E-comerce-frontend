@@ -15,7 +15,7 @@ const ShopCategory = (props) => {
       <img className='shopcategory-banner' src={props.banner} alt="Category Banner" />
       <div className="shopcategory-indexsort">
         <p>
-          <span>Showing 1-{filteredProducts.length}</span> out of products
+          <span className='span'>Showing 1-{filteredProducts.length}</span> out of products
         </p>
         <div className="shopcategory-sort">
           Sort by <img src={dropdown_icon} alt="Dropdown Icon" />
